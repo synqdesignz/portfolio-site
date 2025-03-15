@@ -1,0 +1,289 @@
+body{
+    background-color: #121212;
+    color: #E0E0E0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #1E1E1E;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    border: 1px solid #00AEEF;
+    border-radius: 50px;
+}
+
+
+
+/* Buttons */
+button {
+    background-color: transparent;
+    color: #E0E0E0;;
+    border: 1px solid #00AEEF;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+button:hover{
+    background-color:#00AEEF;
+    color: #1E1E1E;
+}
+
+#navbar {
+    padding: 20px;
+    font-family: fantasy;
+    text-align: right;
+    font-size: x-large;
+}
+
+#navbar a {
+    color: #E0E0E0;
+    padding-left: 20px;
+}
+
+
+#greeting {
+    background-color: #1E1E1E;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #00AEEF;
+    border-top: 1px solid #00AEEF;
+    box-shadow: 20px 40px 60px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-size: xx-large;
+}
+
+#about {  
+    text-align: center;
+    border-bottom: 1px solid #00AEEF;
+    border-top: 1px solid #00AEEF;
+    border-radius: 20px;
+    border-style: groove;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;  
+    font-size: x-large;
+}
+
+#about h2 {
+    color: #00AEEF;
+    border-bottom: 1px solid #00AEEF;
+    border-radius: 10px;
+}
+
+
+#about p {
+    text-align: left;
+    border-right: 1px solid #00AEEF;
+    border-left: 1px solid #00AEEF;
+    border-radius: 50px; 
+    padding: 20px;
+}
+
+#displayskills{
+    justify-content: center;
+    border-right: 1px solid #00AEEF;
+    border-left: 1px solid #00AEEF;
+    border-radius: 20px;
+    border-style: groove;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+#displayskills h2{
+    color: #00AEEF;
+    border-bottom: 1px solid #00AEEF;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/*Skill Tree*/
+#skilltree{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 950px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 30px;
+    gap: 50px;
+    border-right: 1px solid #00AEEF;
+    border-left: 1px solid #00AEEF;
+    border-radius: 50px; 
+}
+
+/* Skill Names */
+.skill p {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+
+
+.skill:hover{
+    transform: scale(1.1);
+    cursor: progress;
+}
+
+
+/* Border Hexagon Shape */
+.border {
+    width: 100px;
+    height: 115px;
+    background-color: #afbec4;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.border img {
+    width: 75px;
+    height: 75px;
+}
+
+
+/* Progress Bar */
+.progress-bar {
+    width: 100px;
+    height: 10px;
+    background-color: #afbec4;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+/* Progress Fill */
+.progress {
+    height: 100%;
+    background-color: #00AEEF;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+#skills {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Work Section */
+#work {
+    text-align: center;
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Section Titles */
+#work h2 {
+    font-size: 28px;
+    color: #00AEEF;
+    margin-bottom: 20px;
+}
+
+/* Work Item Layout */
+.work-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+/* Reversed Layout */
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Titles */
+.title {
+    font-size: 22px;
+    width: 20%;
+    text-align: center;
+    color: #00AEEF;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    gap: 10px;
+}
+
+/* Specific Grids */
+.grid.right, .grid.left {
+    width: 75%;
+}
+
+.grid.right {
+    grid-template-columns: repeat(4, 1fr); /* 4 logos per row */
+}
+
+.grid.left {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+}
+
+/* Image Styling */
+.grid img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.grid img:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+#contact {
+    text-align: left;
+    color: #00AEEF;
+    padding: 10px;
+    max-width: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+} 
+
+
+footer {
+    background-color:#1E1E1E;
+    padding:10px;
+    text-align: center;
+}
+
