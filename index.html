@@ -7,17 +7,14 @@
         <title>RomarioB</title>
         <link rel="icon" type="image/png" href="rb.png">
         <link rel="stylesheet" href ="style.css">
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ 
     </head>
 
     <body>
-        <header>
-            <!--Title Section-->
-            <section id ="greeting">
-                <p>Greetings, I am Romario.</p>
-                <p>Designer and Developer</p>
-                <button type="submit">Enter Website</button>
-            </section>
 
+        <header>
             <section id="navbar">
                 <a href="#about">About</a>
                 <a href="#displayskills">Skills</a>
@@ -26,280 +23,301 @@
             </section>
         </header>
 
-        <!--About Me-->
-        <section id="about">
-            <div class ="about-me">
-                <h2>About Me</h2>
-                <p>Hey there! I’m a passionate graphic designer, 
-                    web developer, and tech enthusiast with a strong 
-                    eye for aesthetics and functionality. 
-                    With experience in front-end and back-end development, 
-                    I enjoy bringing creative ideas to life through design and 
-                    code, also have a fondness for problem solving code. When not infront 
-                    the computer screen, I like to spend my time playing
-                    football or video gaming, also love spending time with family.
-                    I’m always looking for new challenges and opportunities to learn. 
-                    Let’s connect and create something amazing!
-                </p>
+        <!--Title Section-->
+        <div class = "container">
+            <div class = "left">
+                <section id ="greeting">
+                    <p class = "typing">Hi what's up, I am <span class ="name">Romario</span>,</p>
+                    <p class = "soft_design">Software Developer & Graphic Designer</p>
+                    <p><i class="fa-solid fa-location-dot"></i>Bridgetown, Barbados</p>
+
+                    <a href="https://github.com/your-repo" target="_blank">
+                        <span class="github"><i class="fa-brands fa-github"></i></span>
+                    </a>
+                    
+                    <a href="https://linkedin.com/in/romario-browne-392871228" target="_blank">
+                        <span class="linkedin"><i class="fa-brands fa-linkedin"></i></span>
+                    </a>
+                    
+                    <a href="mailto:romariobrowne@gmail.com">
+                        <span class="email"><i class="fa-solid fa-envelope"></i></span>
+                    </a>
+                    
+                    <a href="https://www.instagram.com/your-profile" target="_blank">
+                        <span class="insta"><i class="fa-brands fa-instagram"></i></span>
+                    </a>
+                </section>
+
+                <section id="about">
+                    <div class ="about-me">
+                        <p>Hey, let me tell you a bit about myself. I’m someone who genuinely enjoys coding, 
+                            not just saying that to impress anyone, I actually love it. I specialize in backend 
+                            development and database integration, but I’ve also worked on the front end.
+                            Right now, I’m learning React, and once I’m comfortable with that, I plan to dive 
+                            into AI and animations. My dream since I was around 10 years old has always been 
+                            game development.  
+                            Outside of coding, I’m either gaming or out on the football field (yeah, the real one 
+                            "soccer"). I’m always looking to improve my skills and try to set aside time to explore 
+                            new tech.
+                        </p>
+                           
+                    </div>
+                </section>
             </div>
 
-            <!--Downloadable Link for my CV-->
-            <div class = "cv-link">
-                <label> Click here to view my CV-</label>
-                <a href ="romariobrowne.cv"></a>
+            <div class="right">
+                <section id="displayskills">
+                    <h2>Tech Stack</h2>
+                    <div class="mindmap-container">
+                        <div class="skill-node" style="--i:0;"><i class="devicon-cplusplus-plain"></i><span>C++</span></div>
+                        <div class="skill-node" style="--i:1;"><i class="devicon-html5-plain"></i><span>HTML</span></div>
+                        <div class="skill-node" style="--i:2;"><i class="devicon-css3-plain"></i><span>CSS</span></div>
+                        <div class="skill-node" style="--i:3;"><i class="fa-brands fa-square-js"></i><span>JavaScript</span></div>
+                        <div class="skill-node" style="--i:4;"><i class="devicon-photoshop-plain"></i><span>Photoshop</span></div>
+                        <div class="skill-node" style="--i:5;"><i class="devicon-premierepro-plain"></i><span>PremierePro</span></div>
+                        <div class="skill-node" style="--i:6;"><i class="fa-brands fa-react"></i><span>React</span></div>
+                        <div class="skill-node" style="--i:7;"><i class="devicon-python-plain"></i><span>Python</span></div>
+                        <div class="skill-node" style="--i:8;"><i class="devicon-mysql-plain-wordmark"></i><span>MySQL</span></div>
+                        <div class="skill-node" style="--i:9;"><i class="devicon-git-plain"></i><span>Git</span></div>
+                    </div>
+                </section>
             </div>
-        </section>
-
-
-        <!--Images of languages (C++,HTML,CSS,JavaScript,Pyton,Mysql,WordPress)-->
+        </div>
         
-       <section id = "displayskills">
-        <h2>Skill Tree Progress</h2><br>
-        <section id = "skilltree">
-            <div class = "skill">
-                <p>C++</p>
-                <div class = "border">
-                    <img src = "skills/c++.png" alt = "">
-                </div>
-                <div class = progress-bar>
-                    <div class = progress style = "width: 90%;"></div>
-                </div>
-            </div>
-
-            <div class = "skill">
-                <p>HTML</p>
-                <div class = "border">
-                    <img src = "skills/html.png" alt = "">
-                </div>
-                <div class = progress-bar>
-                    <div class = progress style = "width: 100%;"></div>
-                </div>
-            </div>
-
-            <div class = "skill">
-                <p>CSS</p>
-                <div class = "border">
-                    <img src = "skills/css.png" alt = "">
-                </div>
-                <div class = progress-bar>
-                    <div class = progress style = "width: 80%;"></div>
-                </div>
-            </div>
-
-            <div class = "skill">
-                <p>JavaScript</p>
-                <div class = "border">
-                    <img src = "skills/javascripts.png" alt = "">
-                </div>
-                <div class = progress-bar>
-                    <div class = progress style = "width: 65%;"></div>
-                </div>
-            </div>
-
-            <div class = "skill">
-                <p>Excel</p>
-                <div class = "border">
-                    <img src = "skills/excel.png" alt = "">
-                </div>
-                <div class = progress-bar>
-                    <div class = progress style = "width: 100%;"></div>
-                </div>
-            </div>
-
-            <div class = "skill">
-                <p>Premiere Pro</p>
-                <div class = "border">
-                    <img src = "skills/prempro.png" alt = "">
-                </div>
-                <div class = progress-bar>
-                    <div class = progress style = "width: 30%;"></div>
-                </div>
-            </div>
-
-            <div class = "skill">
-                <p>Google Docs</p>
-                <div class = "border">
-                    <img src = "skills/googledocs.png" alt = "">
-                </div>
-                <div class = progress-bar>
-                    <div class = progress style = "width: 95%;"></div>
-                </div>
-            </div>
-
-            <div class = "skill">
-                <p>Appscripts</p>
-                <div class = "border">
-                    <img src = "skills/appscripts.png" alt = "">
-                </div>
-                <div class = progress-bar>
-                    <div class = progress style = "width: 55%;"></div>
-                </div>
-            </div>
-
-            <div class = "skill">
-                <p>Python</p>
-                <div class = "border">
-                    <img src = "skills/python.png" alt = "">
-                </div>
-                <div class = progress-bar>
-                    <div class = progress style = "width: 80%;"></div>
-                </div>
-            </div>
-
-            <div class = "skill">
-                <p>MySQL</p>
-                <div class = "border">
-                    <img src = "skills/mysql.png" alt = "">
-                </div>
-                <div class = progress-bar>
-                    <div class = progress style = "width: 95%;"></div>
-                </div>
-            </div>
-            
-            <div class = "skill">
-                <p>WordPress</p>
-                <div class = "border">
-                    <img src = "skills/wordpress.png" alt = "">
-                </div>
-                <div class = progress-bar>
-                    <div class = progress style = "width: 10%;"></div>
-                </div>
-            </div>
-
-            <div class = "skill">
-                <p>React</p>
-                <div class = "border">
-                    <img src = "skills/react.png" alt = "">
-                </div>
-                <div class = progress-bar>
-                    <div class = progress style = "width: 0%;"></div>
-                </div>
-            </div>
-        </section>
-        </section>
-
-        <section id="skills">
-            <h2>My Skills</h2>
-            <p>Graphic Design: Adobe Photoshop</p>
-            <p>Web Development: HTML, CSS, JavaScript, Django, Word Press</p>
-            <p>Database Structure: MySQL, Python, Excel, Google Sheets</p>
-            
-            <!--
-            Graphic Design: Tools you use (Adobe Photoshop, Illustrator, etc.)
-            Web Development: HTML, CSS, JavaScript, Django, MySQL, etc.
-            Databases & Backend: SQL, MySQL Workbench, Python
-            Trading & Finance: Trading strategies, pip calculation tools
-            Other Skills: Excel, Google Sheets, automation tools
-            Best Format Options:
-
-            A skills bar graph or icons to make it visual
-            Categories with descriptions (to avoid making it text-heavy)
-            -->
-        </section>
-
-
         <section id="work">
-            <h2>Take a look at some of the work I did.</h2>
-        
-            <!-- Web Development -->
-            <div class="webdev">
-                <h3>Web Development</h3>
-
-                <!-- Logos (Left Title, Right Grid) -->
-                <div class="work-item">
-                    <h4 class="title left">BT Car Rentals Website</h4>
-                    <div class="grid right">
-                        <img src="webdev/btcarrentals/home.png" alt="">
-                        <img src="webdev/btcarrentals/homepaged.png" alt="">
-                        <img src="webdev/btcarrentals/fleet.png" alt="">
-                        <img src="webdev/btcarrentals/menu.png" alt="">
-                        <img src="webdev/btcarrentals/booking.png" alt="">
-                        <img src="webdev/btcarrentals/booking2.png" alt="">
+            <div class="projects-grid">
+                <h2>Projects</h2><br>
+                <div class="project-card">
+                    <img src="webdev/btcarrentals/home.png" alt="">
+                    <div class="project-details">
+                        <div class = "smallcontainer">
+                            <div class = "left-side">
+                                <h3>BT Rentals</h3>
+                            </div>
+                            <div class = "right-side">
+                                <a href="https://github.com/synqdesignz/bt-car-rentals-website" class="code-link" target="_blank">Code</a>
+                            </div>
+                        </div>
+                        <p>Car rental booking system, with email confirmations.</p>
+                        <div class="project-stack-row">
+                            <div class="project-stack">
+                                <div class = "smallcontainer">
+                                    <div class = "left-side">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JavaScript</span>
+                                        <span>Python (Django)</span>
+                                        <span>MySQL</span>
+                                    </div>
+                                    <div class = "right-side">
+                                        <a href="#" class="status-link" target="_blank">
+                                            <span class="status-container">
+                                                <span class="status live"></span>
+                                                <span class="status-text">Website</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src = "webdev/qrcode/qrcode.png" alt="">
+                    <div class="project-details">
+                        <div class = "smallcontainer">
+                            <div class = "left-side">
+                                <h3>QR Code Generator</h3>
+                            </div>
+                            <div class = "right-side">
+                                <a href="#" class="code-link" target="_blank">Code</a>
+                            </div>
+                        </div>
+                        <p>Fully Customizable QR Code generator, logo, colors, text and more. Coming Soon!</p>
+                        <div class="project-stack-row">
+                            <div class="project-stack">
+                                <div class = "smallcontainer">
+                                    <div class = "left-side">
+                                        <span>React</span>
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>TypeScript</span>
+                                        <span>MySQL</span>
+                                        <span>Python (Django)</span>
+                                    </div>
+                                    <div class = "right-side">
+                                        <a href="#" class="status-link" target="_blank">
+                                            <div class="status-container">
+                                                <span class="status standby"></span>
+                                                <span class="status-text">Website</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="work-item">
-                    <h4 class="title left">Forex Helper</h4>
-                    <div class="grid right">
-
+                <div class="project-card">
+                    <img src="webdev/forex/Screenshot 2025-04-05 114048.png" alt="">
+                    <div class="project-details">
+                        <div class = "smallcontainer">
+                            <div class = "left-side">
+                                <h3>Forex Tools and Tips</h3>
+                            </div>
+                            <div class = "right-side">
+                                <a href="#" class="code-link" target="_blank">Code</a>
+                            </div>
+                        </div>
+                        <p>Coming Soon!</p>
+                        <div class="project-stack-row">
+                            <div class="project-stack">
+                                <div class = "smallcontainer">
+                                    <div class = "left-side">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JavaScript</span>
+                                        <span>Python (Django)</span>
+                                        <span>MySQL</span>
+                                    </div>
+                                    <div class = "right-side">
+                                        <a href="#" class="status-link" target="_blank">
+                                            <div class="status-container">
+                                                <span class="status standby"></span>
+                                                <span class="status-text">Website</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="work-item">
-                    <h4 class="title left">QR-Code Generator</h4>
-                    <div class="grid right">
+                <div class="project-card">
+                    <img src="webdev/portfolio/port.png" alt="">
+                    <div class="project-details">
+                        <div class = "smallcontainer">
+                            <div class = "left-side">
+                                <h3>Personal Porfolio Website</h3>
+                            </div>
+                            <div class = "right-side">
+                                <a href="https://github.com/synqdesignz/portfolio-site" class="code-link" target="_blank">Code</a>
+                            </div>
+                        </div>
+                        <p>Portfolio Website showcasing my skills, projects and experience.</p>
+                        <div class="project-stack-row">
+                            <div class="project-stack">
+                                <div class = "smallcontainer">
+                                    <div class = "left-side">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JavaScript</span>
+                                        <span>Python (Django)</span>
+                                        <span>MySQL</span>
+                                    </div>
+                                    <div class = "right-side">
+                                        <a href="https://synqdesignz.github.io/portfolio-site/" class="status-link" target="_blank">
+                                            <div class="status-container">
+                                                <span class="status live"></span>
+                                                <span class="status-text">Website</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="project-card">
+                    <img src="webdev/to-dolist/to-do.png" alt="">
+                    <div class="project-details">
+                        <div class = "smallcontainer">
+                            <div class = "left-side">
+                                <h3>To-Do List</h3>
+                            </div>
+                            <div class = "right-side">
+                                <a href="#" class="code-link" target="_blank">Code</a>
+                            </div>
+                        </div>
+                        <p>Simple To-Do List, Coming Soon.</p>
+                        <div class="project-stack-row">
+                            <div class="project-stack">
+                                <div class = "smallcontainer">
+                                    <div class = "left-side">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JavaScript</span>
+                                        <span>Python (Django)</span>
+                                        <span>MySQL</span>
+                                    </div>
+                                    <div class = "right-side">
+                                        <a href="https://synqdesignz.github.io/portfolio-site/" class="status-link" target="_blank">
+                                            <div class="status-container">
+                                                <span class="status standby"></span>
+                                                <span class="status-text">Website</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
 
-                <div class="work-item">
-                    <h4 class="title left">To-Do List</h4>
-                    <div class="grid right">
-                        <img src="webdev/to-dolist/to-do.png" alt = "">
+                <div class="project-card">
+                    <img src="webdev/randompw/random.png" alt="">
+                    <div class="project-details">
+                        <div class = "smallcontainer">
+                            <div class = "left-side">
+                                <h3>Random Password Generator</h3>
+                            </div>
+                            <div class = "right-side">
+                                <a href="https://github.com/synqdesignz/random-password-gen" class="code-link" target="_blank">Code</a>
+                            </div>
+                        </div>
+                        <p>Simple password generator built with HTML & JS, rebuilt in Python.</p>
+                        <div class="project-stack-row">
+                            <div class="project-stack">
+                                <div class = "smallcontainer">
+                                    <div class = "left-side">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>Python</span>
+                                    </div>
+                                    <div class = "right-side">
+                                        <a href="https://synqdesignz.github.io/random-password-gen/" class="status-link" target="_blank">
+                                            <div class="status-container">
+                                                <span class="status live"></span>
+                                                <span class="status-text">Website</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+        </section>
 
-                <div class="work-item">
-                    <h4 class="title left">Random Password Generator</h4>
-                    <div class="grid right">
-                        <img src="webdev/randompw/random.png" alt = "">
-                        <img src="webdev/randompw/randompw.png" alt = "">
-
-
-                    </div>
-                </div>
-            </div>
-        
-            <!-- Graphic Design -->
-            <div class="graphicdisplay">
-                <h3>Graphic Design</h3>
-
-                <!-- Logos (Left Title, Right Grid) -->
-                <div class="work-item">
-                    <h4 class="title left">Logos</h4>
-                    <div class="grid right">
-                        <img src="graphics/2b.png" alt="Logo 1">
-                        <img src="graphics/7b.png" alt="Logo 2">
-                        <img src="graphics/9c.png" alt="Logo 3">
-                        <img src="graphics/10d.png" alt="Logo 4">
-                        <img src="graphics/12c.png" alt="Logo 5">
-                        <img src="graphics/15a.png" alt="Logo 6">
-                        <img src="graphics/16.png" alt="Logo 7">
-                        <img src="graphics/17.png" alt="Logo 8">
-                    </div>
-                </div>
-        
-                <!-- Flyers (Right Title, Left Grid) -->
-                <div class="work-item reverse">
-                    <div class="grid left">
-                        <img src="graphics/11.png" alt="Flyer 1">
-                        <img src="graphics/14.png" alt="Flyer 2">
-                    </div>
-                    <h4 class="title right">Flyers</h4>
-                </div>
-        
-                <!-- Posters (Left Title, Right Grid) -->
-                <div class="work-item">
-                    <h4 class="title left">Posters</h4>
-                    <div class="grid right">
-                        <img src="graphics/3.png" alt="Poster 1">
-                        <img src="graphics/4.png" alt="Poster 2">
-                        <img src = "graphics/17a.png" alt = "Poster 3">
-                    </div>
-                </div>
-        
-                <!-- Business Cards (Right Title, Left Grid) -->
-                <div class="work-item reverse">
-                    <div class="grid left">
-                        <img src="graphics/5c.png" alt="Business Card">
-                    </div>
-                    <h4 class="title right">Business Cards</h4>
-                </div>
+        <section id="work2">
+            <h3>Graphics - Logos, Posters, Flyers, Business Cards</h3>
+            <div class="all-images">
+                <img src="graphics/9c.png" alt="Logo 3">
+                <img src="graphics/12c.png" alt="Logo 5">
+                <img src="graphics/15a.png" alt="Logo 6">
+                <img src="graphics/17.png" alt="Logo 8">
+                <img src="graphics/11.png" alt="Flyer 1">
+                <img src="graphics/14.png" alt="Flyer 2">
+                <img src="graphics/17a.png" alt="Poster 3">
+                <img src="graphics/5c.png" alt="Business Card">
             </div>
         </section>
-        
-
+         
             <!--Trading Tools-->
             <div class = "trading">
             </div>
@@ -313,7 +331,6 @@
             <div class = "services">
             </div>
         </section>
-        
 
         <!--Contact Section-->
         <section id="contact">
@@ -329,7 +346,7 @@
 
             <button type="submit">Send Message</button>
         </section>
-
+        
 
         <!--Footer-->
         <footer>
