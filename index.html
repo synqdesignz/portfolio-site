@@ -26,41 +26,40 @@
         <!--Title Section-->
         <div class = "container">
             <div class = "left">
-                <section id ="greeting">
-                    <p class = "typing">Hi what's up, I am <span class ="name">Romario</span>,</p>
-                    <p class = "soft_design">Software Developer & Graphic Designer</p>
-                    <p><i class="fa-solid fa-location-dot"></i>Bridgetown, Barbados</p>
+                <section id ="greeting">              
+                    <img src = "me.png" class = "profile-pic">
 
-                    <a href="https://github.com/your-repo" target="_blank">
-                        <span class="github"><i class="fa-brands fa-github"></i></span>
-                    </a>
-                    
-                    <a href="https://linkedin.com/in/romario-browne-392871228" target="_blank">
-                        <span class="linkedin"><i class="fa-brands fa-linkedin"></i></span>
-                    </a>
-                    
-                    <a href="mailto:romariobrowne@gmail.com">
-                        <span class="email"><i class="fa-solid fa-envelope"></i></span>
-                    </a>
-                    
-                    <a href="https://www.instagram.com/your-profile" target="_blank">
-                        <span class="insta"><i class="fa-brands fa-instagram"></i></span>
-                    </a>
+                    <div class = "greeting-text">
+                        <p class = "typing">Hi what's up, I am <span class ="name">Romario</span>,</p>
+                        <p class = "soft_design">Backend Developer & Graphic Designer</p>
+                        <p><i class="fa-solid fa-location-dot"></i>Bridgetown, Barbados</p>
+
+                        <a href="https://github.com/your-repo" target="_blank">
+                            <span class="github"><i class="fa-brands fa-github"></i></span>
+                        </a>
+                        
+                        <a href="https://linkedin.com/in/romario-browne-392871228" target="_blank">
+                            <span class="linkedin"><i class="fa-brands fa-linkedin"></i></span>
+                        </a>
+                        
+                        <a href="mailto:romariobrowne@gmail.com">
+                            <span class="email"><i class="fa-solid fa-envelope"></i></span>
+                        </a>
+                        
+                        <a href="https://www.instagram.com/your-profile" target="_blank">
+                            <span class="insta"><i class="fa-brands fa-instagram"></i></span>
+                        </a>
+                    </div>
                 </section>
 
                 <section id="about">
                     <div class ="about-me">
-                        <p>Hey, let me tell you a bit about myself. I’m someone who genuinely enjoys coding, 
-                            not just saying that to impress anyone, I actually love it. I specialize in backend 
-                            development and database integration, but I’ve also worked on the front end.
-                            Right now, I’m learning React, and once I’m comfortable with that, I plan to dive 
-                            into AI and animations. My dream since I was around 10 years old has always been 
-                            game development.  
+                        <p>I specialize in backend development, with work in frontend aswell. Currently learning
+                            React, once im comfortable with that, I plan to get into game development or AI.
                             Outside of coding, I’m either gaming or out on the football field (yeah, the real one 
                             "soccer"). I’m always looking to improve my skills and try to set aside time to explore 
                             new tech.
-                        </p>
-                           
+                        </p> 
                     </div>
                 </section>
             </div>
@@ -69,6 +68,11 @@
                 <section id="displayskills">
                     <h2>Tech Stack</h2>
                     <div class="mindmap-container">
+
+                        <div class="center-node">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+
                         <div class="skill-node" style="--i:0;"><i class="devicon-cplusplus-plain"></i><span>C++</span></div>
                         <div class="skill-node" style="--i:1;"><i class="devicon-html5-plain"></i><span>HTML</span></div>
                         <div class="skill-node" style="--i:2;"><i class="devicon-css3-plain"></i><span>CSS</span></div>
@@ -88,33 +92,35 @@
             <div class="projects-grid">
                 <h2>Projects</h2><br>
                 <div class="project-card">
-                    <img src="webdev/btcarrentals/home.png" alt="">
+                    <img src="webdev/qrcode/qrcode.png" alt="">
                     <div class="project-details">
                         <div class = "smallcontainer">
                             <div class = "left-side">
                                 <h3>BT Rentals</h3>
                             </div>
                             <div class = "right-side">
-                                <a href="https://github.com/synqdesignz/bt-car-rentals-website" class="code-link" target="_blank">Code</a>
+                                <a href= "https://github.com/synqdesignz/bt-car-rentals-website" class="code-link" target="_blank">
+                                    <i class="fas fa-code"></i>
+                                </a>
                             </div>
                         </div>
                         <p>Car rental booking system, with email confirmations.</p>
                         <div class="project-stack-row">
                             <div class="project-stack">
                                 <div class = "smallcontainer">
-                                    <div class = "left-side">
+                                    <div class = "stack-left-side">
                                         <span>HTML</span>
                                         <span>CSS</span>
                                         <span>JavaScript</span>
-                                        <span>Python (Django)</span>
+                                        <span>Django</span>
                                         <span>MySQL</span>
                                     </div>
-                                    <div class = "right-side">
+                                    <div class = "stack-right-side">
                                         <a href="#" class="status-link" target="_blank">
-                                            <span class="status-container">
-                                                <span class="status live"></span>
+                                            <div class="status-container">
+                                                <span class="status standby"></span>
                                                 <span class="status-text">Website</span>
-                                            </span>
+                                            </div>
                                         </a>
                                     </div>
                                 </div>
@@ -131,22 +137,24 @@
                                 <h3>QR Code Generator</h3>
                             </div>
                             <div class = "right-side">
-                                <a href="#" class="code-link" target="_blank">Code</a>
+                                <a href="#" class="code-link" target="_blank">
+                                    <i class="fas fa-code"></i>
+                                </a>
                             </div>
                         </div>
                         <p>Fully Customizable QR Code generator, logo, colors, text and more. Coming Soon!</p>
                         <div class="project-stack-row">
                             <div class="project-stack">
                                 <div class = "smallcontainer">
-                                    <div class = "left-side">
+                                    <div class = "stack-left-side">
                                         <span>React</span>
                                         <span>HTML</span>
                                         <span>CSS</span>
                                         <span>TypeScript</span>
                                         <span>MySQL</span>
-                                        <span>Python (Django)</span>
+                                        <span>Django</span>
                                     </div>
-                                    <div class = "right-side">
+                                    <div class = "stack-right-side">
                                         <a href="#" class="status-link" target="_blank">
                                             <div class="status-container">
                                                 <span class="status standby"></span>
@@ -161,28 +169,30 @@
                 </div>
 
                 <div class="project-card">
-                    <img src="webdev/forex/Screenshot 2025-04-05 114048.png" alt="">
+                    <img src= "webdev/qrcode/qrcode.png" alt="">
                     <div class="project-details">
                         <div class = "smallcontainer">
                             <div class = "left-side">
                                 <h3>Forex Tools and Tips</h3>
                             </div>
                             <div class = "right-side">
-                                <a href="#" class="code-link" target="_blank">Code</a>
+                                <a href="#" class="code-link" target="_blank">
+                                    <i class="fas fa-code"></i>
+                                </a>
                             </div>
                         </div>
                         <p>Coming Soon!</p>
                         <div class="project-stack-row">
                             <div class="project-stack">
                                 <div class = "smallcontainer">
-                                    <div class = "left-side">
+                                    <div class = "stack-left-side">
                                         <span>HTML</span>
                                         <span>CSS</span>
                                         <span>JavaScript</span>
                                         <span>Python (Django)</span>
                                         <span>MySQL</span>
                                     </div>
-                                    <div class = "right-side">
+                                    <div class = "stack-right-side">
                                         <a href="#" class="status-link" target="_blank">
                                             <div class="status-container">
                                                 <span class="status standby"></span>
@@ -204,21 +214,23 @@
                                 <h3>Personal Porfolio Website</h3>
                             </div>
                             <div class = "right-side">
-                                <a href="https://github.com/synqdesignz/portfolio-site" class="code-link" target="_blank">Code</a>
+                                <a href="https://github.com/synqdesignz/portfolio-site" class="code-link" target="_blank">
+                                    <i class="fas fa-code"></i>
+                                </a>
                             </div>
                         </div>
                         <p>Portfolio Website showcasing my skills, projects and experience.</p>
                         <div class="project-stack-row">
                             <div class="project-stack">
                                 <div class = "smallcontainer">
-                                    <div class = "left-side">
+                                    <div class = "stack-left-side">
                                         <span>HTML</span>
                                         <span>CSS</span>
                                         <span>JavaScript</span>
                                         <span>Python (Django)</span>
                                         <span>MySQL</span>
                                     </div>
-                                    <div class = "right-side">
+                                    <div class = "stack-right-side">
                                         <a href="https://synqdesignz.github.io/portfolio-site/" class="status-link" target="_blank">
                                             <div class="status-container">
                                                 <span class="status live"></span>
@@ -233,28 +245,30 @@
                 </div>
 
                 <div class="project-card">
-                    <img src="webdev/to-dolist/to-do.png" alt="">
+                    <img src="webdev/qrcode/qrcode.png" alt="">
                     <div class="project-details">
                         <div class = "smallcontainer">
                             <div class = "left-side">
-                                <h3>To-Do List</h3>
+                                <h3>Budget Tracker/To-Do/Gains</h3>
                             </div>
                             <div class = "right-side">
-                                <a href="#" class="code-link" target="_blank">Code</a>
+                                <a href="#" class="code-link" target="_blank">
+                                    <i class="fas fa-code"></i>
+                                </a>
                             </div>
                         </div>
                         <p>Simple To-Do List, Coming Soon.</p>
                         <div class="project-stack-row">
                             <div class="project-stack">
                                 <div class = "smallcontainer">
-                                    <div class = "left-side">
+                                    <div class = "stack-left-side">
                                         <span>HTML</span>
                                         <span>CSS</span>
                                         <span>JavaScript</span>
                                         <span>Python (Django)</span>
                                         <span>MySQL</span>
                                     </div>
-                                    <div class = "right-side">
+                                    <div class = "stack-right-side">
                                         <a href="https://synqdesignz.github.io/portfolio-site/" class="status-link" target="_blank">
                                             <div class="status-container">
                                                 <span class="status standby"></span>
@@ -270,26 +284,29 @@
 
 
                 <div class="project-card">
-                    <img src="webdev/randompw/random.png" alt="">
+                    <img src= "webdev/qrcode/qrcode.png" alt="">
                     <div class="project-details">
                         <div class = "smallcontainer">
                             <div class = "left-side">
                                 <h3>Random Password Generator</h3>
                             </div>
                             <div class = "right-side">
-                                <a href="https://github.com/synqdesignz/random-password-gen" class="code-link" target="_blank">Code</a>
+                                <a href="https://github.com/synqdesignz/random-password-gen" class="code-link" target="_blank">
+                                    <i class="fas fa-code"></i>
+                                </a>
                             </div>
                         </div>
                         <p>Simple password generator built with HTML & JS, rebuilt in Python.</p>
                         <div class="project-stack-row">
                             <div class="project-stack">
                                 <div class = "smallcontainer">
-                                    <div class = "left-side">
+                                    <div class = "stack-left-side">
                                         <span>HTML</span>
                                         <span>CSS</span>
+                                        <span>JavaScript</span>
                                         <span>Python</span>
                                     </div>
-                                    <div class = "right-side">
+                                    <div class = "stack-right-side">
                                         <a href="https://synqdesignz.github.io/random-password-gen/" class="status-link" target="_blank">
                                             <div class="status-container">
                                                 <span class="status live"></span>

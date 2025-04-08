@@ -28,18 +28,6 @@ header a:hover{
     color: #0755a8
 }
 
-/*left right*/
-.container {
-    display: flex;
-    justify-content: space-between; 
-    gap: 20px;
-}
-
-.left, .right {
-    width: 50%; 
-    padding: 20px;
-   }
-
 /* Buttons */
 button {
     background-color: transparent;
@@ -72,25 +60,45 @@ button:hover{
     color: #0755a8;
 }
 
+/*left right*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.left, .right {
+    width: 100%; 
+    padding: 20px;
+}
 
 
 /* name and title */
 #greeting {
+    display: flex;
+    align-items: center;
+    gap: 20px;
     padding: 10px;
     margin-bottom: 10px;
     font-size: 20px
 }
 
+.greeting-text{
+    max-width: 600px;
+}
+
 /*Ghost Typing*/
 .typing {
-    font-size: 30px;
-    font-family: monospace;
+    font-size: 25px;
     white-space: nowrap;
     overflow: hidden;
     border-right: 2px solid #0755a8;
     width: 0;
-    animation: typing 3s steps(30, end) forwards, blink 0.7s step-end infinite;
+    animation: typing 3s steps(30, end) forwards, blink 0.9s step-end infinite;
 }
+
 .name{
     color: #0755a8;
 }
@@ -101,13 +109,22 @@ button:hover{
 
 @keyframes typing {
     from { width: 0 }
-    to { width: 440px }
+    to { width: 308px }
 }
 
 @keyframes blink {
     from, to { border-color: transparent }
     50% { border-color: #0755a8; }
 }
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
 
 /* git/linkined Icon Color */
 #greeting a {
@@ -135,7 +152,7 @@ button:hover{
 
 
 
-
+/* Skill Display*/
 #displayskills {
     text-align: center;
     margin-top: 10px;
@@ -187,10 +204,10 @@ button:hover{
     font-size: 1.0em;
 }
   
-  .skill-node:hover {
+.skill-node:hover {
     transform: translate(-50%, -50%) scale(1.1);
-    background-color: #0755a8;
-  }
+    color: #0755a8;
+}
   
   /* Calculate the angle and distance for each skill node */
 .skill-node[style*="--i:0"] { transform: translate(calc(-50% + 150px * cos(0deg)), calc(-50% + 150px * sin(0deg))); }
@@ -220,7 +237,6 @@ button:hover{
 
 .projects-grid h2 {
     color: #0755a8;
-    margin: 0;
     text-align: left; 
 }
 
@@ -233,7 +249,8 @@ button:hover{
 
 
 .project-card {
-    background-color: #000000;
+    background-color: #0755a8;
+    border: 1px solid #ffffff;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -247,53 +264,56 @@ button:hover{
 .project-card img {
     width: 100%;
     display: block;
+    border-bottom: 1px solid #ffffff;
 }
 
 .project-details {
-    padding: 20px;
+    padding: 8px; 
 }
 
 .project-details h3 {
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 
 .project-details p {
-    margin-bottom: 15px;
+    padding: 8px;
 }
 
 .project-card .right-side .code-link {
     background-color: transparent;
     color: white;
     text-decoration: none;
-    border: 2px solid #0755a8;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
     padding: 2px;
     border-radius: 3px;
     transition: background-color 0.3s ease;
+    font-size: 15px;
 }
 
 .project-stack {
-    margin-top: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    font-size: 0.6em;
 }
 
 .project-stack span {
-    padding: 3px 5px;
-    border-radius: 4px;
-    margin-right: 5px;
-    font-size: 0.9em;
+    padding: 3px 2px;
+    margin-right: 10px;
 }
 
 .status-container {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 1px !important;
 }
 
 .status {
-    width: 8px;
-    height: 8px;
+    width: 2px !important;
+    height: 2px !important;
     border-radius: 50%;
-    display: inline-block;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
 
 .live {
@@ -309,8 +329,7 @@ button:hover{
 }
 
 .status-text {
-    font-size: 10px;
-    color: #a3a3a3;
+    color: #ffffff;
 }
 
 @keyframes pulse-green {
@@ -331,23 +350,91 @@ button:hover{
     }
 }
 
-.smallcontainer{
-    display: grid;
-    grid-template-columns: 3fr 1fr;
+.smallcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.left-side{
+.left-side {
+    padding: 2px;
+    flex: 1;
+}
+
+.right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    font-size: 15px;
+    height: 100%; /* Makes sure it's vertically aligned */
+}
+
+.project-card {
+    background-color: #0755a8;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative; /* Needed to anchor bottom-right content */
+}
+
+.project-stack-row {
+    position: relative;
+    padding-bottom: 30px; /* Space for bottom-right item */
+}
+
+.project-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    font-size: 0.6em;
+}
+
+.stack-left-side {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
     padding: 2px;
 }
 
-.right-side{
-    padding: 10px;
-    font-size: 10px;
+.stack-left-side span {
+    padding: 4px 6px;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: white;
+    color: #0755a8;
+    font-size: 12px;
 }
 
-.right-side a{
+.stack-right-side {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+}
+
+.stack-right-side a {
     text-decoration: none;
 }
+
+.status-container {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.status {
+    width: 10px;
+    height: 10px;
+    
+}
+
+
 
 
 
@@ -408,4 +495,64 @@ button:hover{
 footer {
     padding:10px;
     text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    /* Adjust layout for mobile devices */
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .left, .right {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #greeting {
+        font-size: 18px;
+        flex-direction: column;
+    }
+
+    .greeting-text {
+        max-width: none;
+        text-align: center;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr; /* Stack projects in a single column */
+    }
+
+    .project-card {
+        margin: 10px 0; /* Add margin for spacing */
+    }
+
+    /* Adjust buttons */
+    button {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+
+    /* Skill Display */
+    #displayskills {
+        margin-top: 20px;
+    }
+
+    /* Adjust the profile image size */
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Adjust text sizes */
+    #about {
+        font-size: 15px;
+    }
+
+    /* Contact section */
+    #contact {
+        max-width: 100%;
+        margin: 0 auto;
+    }
 }
