@@ -291,6 +291,11 @@ button:hover{
     font-size: 15px;
 }
 
+.code-link:hover{
+    transform: rotate(-6deg) scale(1.02);
+}
+
+
 .project-stack {
     margin-top: 10px;
     display: flex;
